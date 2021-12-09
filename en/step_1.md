@@ -1,10 +1,10 @@
-![The Game view showing a hear GameObject spinning about it's Y axis.](images/spinning-heart.gif)
+![The Game view showing a Heart GameObject spinning about its y-axis.](images/spinning-heart.gif)
 
-In the Inspector window for the GameObject, click ‘Add Component’ and choose ‘New script’ then give your script a sensible name (for example 'ItemController').
+In the Inspector window for the GameObject, click **Add Component** and choose **New script**, then give your script a sensible name (for example, `ItemController`).
 
 Double-click on your new script to open it in the code editor.
 
-Create a variable to control the 'spinSpeed' and code to spin your GameObject:
+Create a variable to control the `spinSpeed` and add code to spin your GameObject:
 
 --- code ---
 ---
@@ -16,14 +16,14 @@ language: cs
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.forward * spinSpeed); //you can also spin backward, up, down, left and right
+        transform.Rotate(Vector3.forward * spinSpeed); // You can also spin backward, up, down, left, and right
     }
 
 --- /code ---
 
-You can rotate about the X, Y, or Z axes by amending the direction in your code:
-+ Vector3.right / Vector3.left = Rotation about the X axis
-+ Vector3.up / Vector3.down = Rotation about the Y axis
-+ Vector3.forward / Vector3.back = Rotation about the Z axis
+You can rotate about the x-, y-, or z-axis by amending the direction in your code:
++ `Vector3.right` or `Vector3.left` = Rotation about the x-axis
++ `Vector3.up` or `Vector3.down` = Rotation about the y-axis
++ `Vector3.forward` or `Vector3.back` = Rotation about the z-axis
 
-**Tip:** If you have added a 'Particle System' to your GameObject change the 'Simulation Space' property in the Inspector window to `World` so that it does not spin with your GameObject.
+**Tip:** If you have added a Particle System to your GameObject, change the 'Simulation Space' property in the Inspector window to `World` so that it does not spin with your GameObject.
